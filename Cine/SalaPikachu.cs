@@ -123,7 +123,7 @@ namespace Cine
 
         }
         //sirve para poder comprar el boleto
-        public static void comprarboletojhonwick(int comprarfila, int comprarcolumna)
+        public static void comprarboletopikachu(int comprarfila, int comprarcolumna)
         {
             sala4[comprarfila, comprarcolumna] = "O";
             Console.WriteLine("usted compro la sala 2 para la pelicula Pikachu");
