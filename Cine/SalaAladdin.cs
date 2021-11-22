@@ -14,7 +14,8 @@ namespace Cine
         public static int topefila = 10;
         public static int topecolumna = 10;
         public static string[,] sala2 = new string[topefila, topecolumna];
-
+        
+        //esté es el menu de la sala Aladdin
         public static void Menusalaaladdin()
         {
             int dato;
@@ -36,25 +37,25 @@ namespace Cine
             } while (dato > 5);
             switch (dato)
             {
-                case 1:
-                    SalaAladdin.Salaaladdinsalallena();
-                    SalaAladdin.imprimirsala();
-                    Cartelera.comprarboletoaladdin();
+                case 1:                                 
+                    SalaAladdin.Salaaladdinsalallena();         
+                    SalaAladdin.imprimirsala();                         //si selecciona 1, le muestra la sala y sus asientos 
+                    Cartelera.comprarboletoaladdin();                   //llama al metodo para comprar boleto
                     break;
 
                 case 2:
                     SalaAladdin.Salaaladdinsalallena();
-                    SalaAladdin.imprimirsala();
-                    SalaAladdin.Menusalaaladdin();
+                    SalaAladdin.imprimirsala();                         //si selecciona 2 sirve para mostrar los asientos disponible
+                    SalaAladdin.Menusalaaladdin();                      //para despues de nuevo llamar al menu de la sala
                     break;
 
                 case 3:
-                    Console.Clear();
-                    Cartelera.cartelera();
+                    Console.Clear();                                    
+                    Cartelera.cartelera();                              //si selecciona 3, regresa al menu de la cartelera
                     break;
 
                 case 4:
-                    Menu.menu();
+                    Menu.menu();                                        //si selecciona 4 regres al menu principal del cine
                     break;
 
                 default:
@@ -63,6 +64,7 @@ namespace Cine
                     break;
             }
         }
+        //sirve para llenar los asientos de la sala 
         public static void Salaaladdinsalallena()
         {
             Console.WriteLine("*****Sala 2*****");
@@ -91,6 +93,7 @@ namespace Cine
                 }
             }
         }
+        //sirve para imprimir la sala 
         public static void imprimirsala()
         {
             for (int i = 0; i < topecolumna; i++)
@@ -102,6 +105,7 @@ namespace Cine
                 Console.WriteLine();
             }
         }
+        //sirve para verificar si los asientos estan llenos o no
         public static bool verificarasientos(int comprarfila, int comprarcolumna)
         {
             bool verificar = comprarfila > topefila || comprarcolumna > topecolumna || comprarfila == 0
@@ -117,11 +121,12 @@ namespace Cine
                 return false;
             }
             return true;
-
+        
         }
+        //sirve para poder comprar el boleto
         public static void comprarboletoaladdin(int comprarfila, int comprarcolumna)
         {
-            sala2[comprarfila, comprarcolumna] = "O";
+            sala2[comprarfila, comprarcolumna] = "O";                               
             Console.WriteLine("usted compro la sala 2 para la pelicula Aladdin");
             Console.WriteLine("");
             ComprarComida.Comprar();
