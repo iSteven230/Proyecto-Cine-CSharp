@@ -10,7 +10,7 @@ namespace Cine
         public string bebida { get; set; }
         public string dulce { get; set; }
 
-
+        //sirve para poder entrar al menu y comprar lo que hay en el cine
         public static int Comprar()
         {
             Console.WriteLine("Que desea comprar: ");
