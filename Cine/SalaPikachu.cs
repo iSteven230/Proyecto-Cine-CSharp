@@ -57,6 +57,7 @@ namespace Cine
 
                 default:
                     Console.WriteLine("Numero no valido");
+                    Menusalapikachu();
                     break;
             }
         }
@@ -121,7 +122,10 @@ namespace Cine
             sala4[comprarfila, comprarcolumna] = "O";
             Console.WriteLine("sala comprada");
             Console.WriteLine("");
+            ComprarComida.Comprar();
+            Console.WriteLine("");
             Menusalapikachu();
+
         }
     }
 }

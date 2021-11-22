@@ -15,6 +15,7 @@ namespace Cine
             int dato;
             Console.WriteLine("1. Comprar boletos");
             Console.WriteLine("2. Ver asientos disponibles");
+            Console.WriteLine("3. Comprar comida");
             Console.WriteLine("3. Atras");
             Console.WriteLine("4. Salir");
             dato = int.Parse(Console.ReadLine());
@@ -42,20 +43,22 @@ namespace Cine
                     SalaJhonWick.imprimirsala();
                     SalaJhonWick.Menusalajhonwick();
                     break;
-
                 case 3:
-                    Cartelera.cartelera();
+                    ComprarComida.Comprar();
                     break;
 
                 case 4:
+                    Cartelera.cartelera();
+                    break;
+
+                case 5:
                     break;
 
                 default:
                     Console.WriteLine("Numero no valido");
+                    Menusalajhonwick();
                     break;
             }
-
-
         }
         public static void Salajhonwicksalallena()
         {
@@ -81,9 +84,6 @@ namespace Cine
                     {
                         sala1[i, j] = "D";
                     }
-                    
-
-
                 }
             }
         }
@@ -118,6 +118,8 @@ namespace Cine
         {
             sala1[comprarfila, comprarcolumna] = "O";
             Console.WriteLine("sala comprada");
+            Console.WriteLine("");
+            ComprarComida.Comprar();
             Console.WriteLine("");
             Menusalajhonwick();
         }
