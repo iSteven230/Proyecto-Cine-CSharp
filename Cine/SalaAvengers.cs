@@ -16,7 +16,6 @@ namespace Cine
             Console.WriteLine("1. Comprar boletos");
             Console.WriteLine("2. Ver asientos disponibles");
             Console.WriteLine("3. Atras");
-            Console.WriteLine("4. Salir");
             dato = int.Parse(Console.ReadLine());
             Console.Clear();
             do
@@ -45,10 +44,12 @@ namespace Cine
                     break;
 
                 case 3:
+                    Console.Clear();
                     Cartelera.cartelera();
                     break;
 
                 case 4:
+                    Menu.menu();
                     break;
 
                 default:
@@ -114,7 +115,7 @@ namespace Cine
         public static void comprarboletoavengers(int comprarfila, int comprarcolumna)
         {
             sala3[comprarfila, comprarcolumna] = "O";
-            Console.WriteLine("sala comprada");
+            Console.WriteLine("usted compro la sala 3 para la pelicula Avengers");
             Console.WriteLine("");
             ComprarComida.Comprar();
             Console.WriteLine("");

@@ -21,7 +21,7 @@ namespace Cine
                 }
                 if (dato == 2)
                 {
-                    break;
+                    Environment.Exit(1);
                 }
             } while (dato > 3);
             Console.Clear();

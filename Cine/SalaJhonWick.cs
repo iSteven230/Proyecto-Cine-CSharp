@@ -15,9 +15,7 @@ namespace Cine
             int dato;
             Console.WriteLine("1. Comprar boletos");
             Console.WriteLine("2. Ver asientos disponibles");
-            Console.WriteLine("3. Comprar comida");
             Console.WriteLine("3. Atras");
-            Console.WriteLine("4. Salir");
             dato = int.Parse(Console.ReadLine());
             Console.Clear();
 
@@ -44,14 +42,8 @@ namespace Cine
                     SalaJhonWick.Menusalajhonwick();
                     break;
                 case 3:
-                    ComprarComida.Comprar();
-                    break;
-
-                case 4:
+                    Console.Clear();
                     Cartelera.cartelera();
-                    break;
-
-                case 5:
                     break;
 
                 default:
@@ -117,7 +109,7 @@ namespace Cine
         public static void comprarboletojhonwick(int comprarfila, int comprarcolumna)
         {
             sala1[comprarfila, comprarcolumna] = "O";
-            Console.WriteLine("sala comprada");
+            Console.WriteLine("usted compro la sala 2 para la pelicula Jhon Wick 3");
             Console.WriteLine("");
             ComprarComida.Comprar();
             Console.WriteLine("");

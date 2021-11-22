@@ -15,6 +15,7 @@ namespace Cine
             Console.WriteLine("2. Aladdin, sala 2");
             Console.WriteLine("3. Avengers, sala 3");
             Console.WriteLine("4. Pikachu, sala 4");
+            Console.WriteLine("5. Atras");
             Console.WriteLine("Digite el numero correspondiente a la pelicula");
             opcion = int.Parse(Console.ReadLine());
             Console.Clear();
@@ -39,6 +40,14 @@ namespace Cine
                 case 4:
                     Console.Clear();
                     SalaPikachu.Menusalapikachu();
+                    break;
+
+                case 5:
+                    Menu.menu();
+                    break;
+
+                default:
+
                     break;
             }
         }
