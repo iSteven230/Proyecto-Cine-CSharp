@@ -1,0 +1,14 @@
+C:\Users\usuario\source\repos\Cine\bin\Debug\netcoreapp3.1\Cine.exe
+C:\Users\usuario\source\repos\Cine\bin\Debug\netcoreapp3.1\Cine.deps.json
+C:\Users\usuario\source\repos\Cine\bin\Debug\netcoreapp3.1\Cine.runtimeconfig.json
+C:\Users\usuario\source\repos\Cine\bin\Debug\netcoreapp3.1\Cine.runtimeconfig.dev.json
+C:\Users\usuario\source\repos\Cine\bin\Debug\netcoreapp3.1\Cine.dll
+C:\Users\usuario\source\repos\Cine\bin\Debug\netcoreapp3.1\Cine.pdb
+C:\Users\usuario\source\repos\Cine\obj\Debug\netcoreapp3.1\Cine.csproj.AssemblyReference.cache
+C:\Users\usuario\source\repos\Cine\obj\Debug\netcoreapp3.1\Cine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\source\repos\Cine\obj\Debug\netcoreapp3.1\Cine.AssemblyInfoInputs.cache
+C:\Users\usuario\source\repos\Cine\obj\Debug\netcoreapp3.1\Cine.AssemblyInfo.cs
+C:\Users\usuario\source\repos\Cine\obj\Debug\netcoreapp3.1\Cine.csproj.CoreCompileInputs.cache
+C:\Users\usuario\source\repos\Cine\obj\Debug\netcoreapp3.1\Cine.dll
+C:\Users\usuario\source\repos\Cine\obj\Debug\netcoreapp3.1\Cine.pdb
+C:\Users\usuario\source\repos\Cine\obj\Debug\netcoreapp3.1\Cine.genruntimeconfig.cache
