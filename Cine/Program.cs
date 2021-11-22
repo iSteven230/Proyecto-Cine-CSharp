@@ -2,6 +2,7 @@
 
 namespace Cine
 {
+    //el main del proyecto donde se ejecutara todo el programa
     class Program
     {
 
