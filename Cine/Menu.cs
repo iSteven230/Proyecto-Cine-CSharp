@@ -6,6 +6,7 @@ namespace Cine
 {
     class Menu
     {
+        //sirve para tener un menu del cine
         public static void menu()
         {
             int dato = 0;
@@ -25,7 +26,7 @@ namespace Cine
                 }
             } while (dato > 3);
             Console.Clear();
-            Cartelera.cartelera();   
+            Cartelera.cartelera();                              //si es correcto todo va a la cartelera
            
         }
     }
