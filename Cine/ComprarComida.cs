@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -9,6 +9,7 @@ namespace Cine
         public string palomitas { get; set; }
         public string bebida { get; set; }
         public string dulce { get; set; }
+        public string hotdog { get; set; }
 
         //sirve para poder entrar al menu y comprar lo que hay en el cine
         public static int Comprar()
@@ -17,8 +18,9 @@ namespace Cine
             Console.WriteLine("1. Palomitas ");
             Console.WriteLine("2. Bebidas: ");
             Console.WriteLine("3. Dulces: ");
-            Console.WriteLine("4. Atras: ");
-            Console.WriteLine("5. Salir: ");
+            Console.WriteLine("4. Hotdog");
+            Console.WriteLine("5. Atras: ");
+            Console.WriteLine("6. Salir: ");
 
             int dato = int.Parse(Console.ReadLine());
 
@@ -28,10 +30,13 @@ namespace Cine
             bebida.bebida = "Y compro bebida";
             ComprarComida dulce = new ComprarComida();
             dulce.dulce = "Y compro dulce";
+            ComprarComida hotdog = new ComprarComida();
+            hotdog.hotdog = "Y compro hotdog";
             List<ComprarComida> listacomida = new List<ComprarComida>();
             listacomida.Add(palomitas);
             listacomida.Add(bebida);
             listacomida.Add(dulce);
+            listacomida.Add(hotdog);
             
             switch (dato)
             {
@@ -67,11 +72,21 @@ namespace Cine
                     break;
 
                 case 4:
+                    foreach (ComprarComida item in listacomida)
+                    {
+                        Console.Clear();
+                        Console.WriteLine(hotdog.hotdog);
+                        Console.WriteLine("");
+                        Cartelera.cartelera();
+                    }
+                    break;
+
+                case 5:
                     Console.Clear();
                     Cartelera.cartelera();
                     break;
 
-                case 5:
+                case 6:
                     Menu.menu();
                     break; 
 
