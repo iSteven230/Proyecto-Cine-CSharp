@@ -10,7 +10,7 @@ namespace Cine
         public static int topecolumna = 10;
         public static string[,] sala1 = new string[topefila, topecolumna];
         
-        //esté es el menu de la sala Aladdin
+        //esté es el menu de la sala Jhon Wick
         public static void Menusalajhonwick()
         {
             int dato;
