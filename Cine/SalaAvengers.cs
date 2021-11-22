@@ -9,7 +9,8 @@ namespace Cine
         public static int topefila = 10;
         public static int topecolumna = 10;
         public static string[,] sala3 = new string[topefila, topecolumna];
-
+        
+        //esté es el menu de la sala Avengers
         public static void Menusalaavengers()
         {
             int dato;
@@ -33,24 +34,24 @@ namespace Cine
             {
                 case 1:
                     SalaAvengers.Salaavengerssalallena();
-                    SalaAvengers.imprimirsala();
-                    Cartelera.comprarboletoavengers();
+                    SalaAvengers.imprimirsala();                    //si selecciona 1, le muestra la sala y sus asientos 
+                    Cartelera.comprarboletoavengers();              //llama al metodo para comprar boleto
                     break;
 
                 case 2:
                     SalaAvengers.Salaavengerssalallena();
-                    SalaAvengers.imprimirsala();
-                    SalaAvengers.Menusalaavengers();
+                    SalaAvengers.imprimirsala();                    //si selecciona 2 sirve para mostrar los asientos disponible
+                    SalaAvengers.Menusalaavengers();                //para despues de nuevo llamar al menu de la sala
                     break;
 
                 case 3:
                     Console.Clear();
-                    Cartelera.cartelera();
+                    Cartelera.cartelera();                          //si selecciona 3, regresa al menu de la cartelera
                     break;
 
                 case 4:
-                    Menu.menu();
-                    break;
+                    Menu.menu();                                    //si selecciona 4 regres al menu principal del cine
+                    break;                              
 
                 default:
                     Console.WriteLine("Numero no valido");
@@ -58,6 +59,8 @@ namespace Cine
                     break;
             }
         }
+        
+        //sirve para llenar los asientos de la sala 
         public static void Salaavengerssalallena()
         {
             Console.WriteLine("*****Sala 3*****");
@@ -85,6 +88,7 @@ namespace Cine
                 }
             }
         }
+        //sirve para imprimir la sala 
         public static void imprimirsala()
         {
             for (int i = 0; i < topecolumna; i++)
@@ -96,6 +100,7 @@ namespace Cine
                 Console.WriteLine();
             }
         }
+        //sirve para verificar si los asientos estan llenos o no
         public static bool verificarasientos(int comprarfila, int comprarcolumna)
         {
             bool verificar = comprarfila > topefila || comprarcolumna > topecolumna || comprarfila == 0
@@ -112,6 +117,7 @@ namespace Cine
             }
             return true;
         }
+        //sirve para poder comprar el boleto
         public static void comprarboletoavengers(int comprarfila, int comprarcolumna)
         {
             sala3[comprarfila, comprarcolumna] = "O";
