@@ -5,17 +5,26 @@ using System.Text;
 namespace Cine
 {
     //en esta clase encuentra varios metodos, que sirve para ver la cartelera, etc
-    class Cartelera
+     class Cartelera
     {
         //sirve para ingresar a la cartelera del cine
         public static void cartelera()
         {
             int opcion;
             Console.WriteLine("Peliculas Disponible:");
-            Console.WriteLine("1. Jhon Wick 3, sala 1");
-            Console.WriteLine("2. Aladdin, sala 2");
-            Console.WriteLine("3. Avengers, sala 3");
-            Console.WriteLine("4. Pikachu, sala 4");
+            Console.WriteLine("********");
+            Console.WriteLine("    Sala 1");
+            Console.WriteLine("1. Jhon Wick 3");
+            Console.WriteLine("*********");
+            Console.WriteLine("    Sala 2");
+            Console.WriteLine("2. Aladdin");
+            Console.WriteLine("********");
+            Console.WriteLine("    Sala 3");
+            Console.WriteLine("3. Avengers");
+            Console.WriteLine("*********");
+            Console.WriteLine("    Sala 4");
+            Console.WriteLine("4. Pikachu");
+            Console.WriteLine("********");
             Console.WriteLine("5. Atras");
             Console.WriteLine("Digite el numero correspondiente a la pelicula");
             opcion = int.Parse(Console.ReadLine());
