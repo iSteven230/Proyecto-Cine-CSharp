@@ -1,2 +1,3 @@
 # Proyecto-Cine-CSharp
-Hecho Por Ernesto Steven Seminario
+Hecho Por Ernesto Steven Seminario Alarcon
+ 
