@@ -52,6 +52,7 @@ namespace Cine
                         int confir = int.Parse(Console.ReadLine());
                         if (confir == 1)
                         {
+                            Console.Clear();
                             ComprarComida.Comprar();
                         }
                         else
@@ -71,6 +72,7 @@ namespace Cine
                         int confir = int.Parse(Console.ReadLine());
                         if (confir == 1)
                         {
+                            Console.Clear();
                             ComprarComida.Comprar();
                         }
                         else
@@ -91,6 +93,7 @@ namespace Cine
                         int confir = int.Parse(Console.ReadLine());
                         if (confir == 1)
                         {
+                            Console.Clear();
                             ComprarComida.Comprar();
                         }
                         else
@@ -110,6 +113,7 @@ namespace Cine
                         int confir = int.Parse(Console.ReadLine());
                         if (confir == 1)
                         {
+                            Console.Clear();
                             ComprarComida.Comprar();
                         }
                         else
