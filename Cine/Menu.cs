@@ -9,8 +9,10 @@ namespace Cine
         //sirve para tener un menu del cine
         public static void menu()
         {
-            int dato = 0;
-            Console.WriteLine("*******Cine*******");
+            int dato = 0, confirmar;
+            Console.WriteLine("******");
+            Console.WriteLine("*  Cine  *");
+            Console.WriteLine("******");
             do
             {
                 Console.WriteLine("Digite 1 para ver la cartelera: ");
@@ -22,7 +24,16 @@ namespace Cine
                 }
                 if (dato == 2)
                 {
-                    Environment.Exit(1);
+                    Console.WriteLine("Está seguro?");
+                    Console.WriteLine("1. confirmar");
+                    Console.WriteLine("2. no");
+                    confirmar = int.Parse(Console.ReadLine());
+                    if (confirmar == 1)
+                    {
+                        Environment.Exit(1);
+                    }
+                    else
+                        Menu.menu();
                 }
             } while (dato > 3);
             Console.Clear();
