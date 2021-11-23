@@ -46,6 +46,15 @@ namespace Cine
                         Console.Clear();
                         Console.WriteLine(palomitas.palomitas);
                         Console.WriteLine("");
+                        Console.WriteLine("Desea comprar otra cosa?");
+                        Console.WriteLine("1. Si");
+                        Console.WriteLine("2. No");
+                        int confir = int.Parse(Console.ReadLine());
+                        if (confir == 1)
+                        {
+                            ComprarComida.Comprar();
+                        }
+                        else
                         Cartelera.cartelera();
                     }
                     break;
@@ -56,7 +65,16 @@ namespace Cine
                         Console.Clear();
                         Console.WriteLine(bebida.bebida);
                         Console.WriteLine("");
-                        Cartelera.cartelera();
+                        Console.WriteLine("Desea comprar otra cosa?");
+                        Console.WriteLine("1. Si");
+                        Console.WriteLine("2. No");
+                        int confir = int.Parse(Console.ReadLine());
+                        if (confir == 1)
+                        {
+                            ComprarComida.Comprar();
+                        }
+                        else
+                            Cartelera.cartelera();
                     }
                     break;
 
@@ -67,7 +85,16 @@ namespace Cine
                         Console.Clear();
                         Console.WriteLine(dulce.dulce);
                         Console.WriteLine("");
-                        Cartelera.cartelera();
+                        Console.WriteLine("Desea comprar otra cosa?");
+                        Console.WriteLine("1. Si");
+                        Console.WriteLine("2. No");
+                        int confir = int.Parse(Console.ReadLine());
+                        if (confir == 1)
+                        {
+                            ComprarComida.Comprar();
+                        }
+                        else
+                            Cartelera.cartelera();
                     }
                     break;
 
@@ -77,7 +104,16 @@ namespace Cine
                         Console.Clear();
                         Console.WriteLine(hotdog.hotdog);
                         Console.WriteLine("");
-                        Cartelera.cartelera();
+                        Console.WriteLine("Desea comprar otra cosa?");
+                        Console.WriteLine("1. Si");
+                        Console.WriteLine("2. No");
+                        int confir = int.Parse(Console.ReadLine());
+                        if (confir == 1)
+                        {
+                            ComprarComida.Comprar();
+                        }
+                        else
+                            Cartelera.cartelera();
                     }
                     break;
 
